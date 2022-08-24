@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inova | IFPI</title>
+  <link rel="stylesheet" href="estilo/style.css">
+</head>
+
+<body>
+  <nav id="navigation">
+    <div class="wrapper">
+      <a class="logo" href="#home">Logo</a>
+
+      <div class="menu">
+        <ul>
+          <li><a href="#home" class="item-menu">Home</a></li>
+          <li><a href="#sobre" class="item-menu">Sobre</a></li>
+          <li><a href="#galeria" class="item-menu">Galeria</a></li>
+          <li><a href="#palestrantes" class="item-menu">Cronograma</a></li>
+        </ul>
+
+        <a href="#" class="button" onclick="closeMenu()">Inscrever-se</a>
+        <ul class="social-links">
+          <li>
+            <a href="https://www.instagram.com/adriano.py/" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 1.99997H7C4.23858 1.99997 2 4.23855 2 6.99997V17C2 19.7614 4.23858 22 7 22H17C19.7614 22 22 19.7614 22 17V6.99997C22 4.23855 19.7614 1.99997 17 1.99997Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M15.9997 11.3701C16.1231 12.2023 15.981 13.0523 15.5935 13.7991C15.206 14.5459 14.5929 15.1515 13.8413 15.5297C13.0898 15.908 12.2382 16.0397 11.4075 15.906C10.5768 15.7723 9.80947 15.3801 9.21455 14.7852C8.61962 14.1903 8.22744 13.4229 8.09377 12.5923C7.96011 11.7616 8.09177 10.91 8.47003 10.1584C8.84829 9.40691 9.45389 8.7938 10.2007 8.4063C10.9475 8.0188 11.7975 7.87665 12.6297 8.00006C13.4786 8.12594 14.2646 8.52152 14.8714 9.12836C15.4782 9.73521 15.8738 10.5211 15.9997 11.3701Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M17.5 6.49997H17.51" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/abm-astro" target="_blank">
+              <svg width="13" height="22" viewBox="0 0 13 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 0.999969H9C7.67392 0.999969 6.40215 1.52675 5.46447 2.46444C4.52678 3.40212 4 4.67389 4 5.99997V8.99997H1V13H4V21H8V13H11L12 8.99997H8V5.99997C8 5.73475 8.10536 5.4804 8.29289 5.29286C8.48043 5.10533 8.73478 4.99997 9 4.99997H12V0.999969Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/abm-astro" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="open-menu" aria-label="Abrir menu" aria-expanded="false">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 20H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M10 12H30" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M18 28L30 28" stroke="#00856F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+      <button class="close-menu" aria-label="Fechar menu" aria-expanded="true">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M30 10L10 30M10 10L30 30" stroke="#FFFAF1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </button>
+  </nav>
+  <section id="home">
+    <div class="wrapper">
+      <div class="col-a">
+        <header>
+          <h4>BOAS-VINDAS AO INOVA IFPI 💡</h4>
+          <h1>Um evento para todos que pensam GRANDE</h1>
+        </header>
+        <div class="content">
+          <p>Um evento idealizado pelo Módulo IV do curso de Análise e desenvolvimento de sistemas com mentoria do professor Marcony.</p>
+          <a class="button" href="#" target="_blank">Inscrever-se</a>
+        </div>
+      </div>
+      <div class="col-b">
+        <img src="assets/background-home.png" class="foto">
+      </div>
+    </div>
+  </section>
+  <span></span>
+  <section id="sobre">
+    <div class="wrapper">
+      <header>
+        <h2>Sobre o Evento</h2>
+        <h3>O que esperar do INOVA IFPI 2022</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, eius ducimus? Exercitationem, nam sunt eos, molestias aspernatur aut quaerat velit quas deserunt, consequatur fugit. Consectetur esse quod necessitatibus amet velit.</p>
+      </header>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem quasi iste dolorem itaque libero a, vero, accusantium laudantium officia accusamus ipsum debitis dolores tenetur architecto veniam voluptate delectus! Dolores, quod!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="galeria">
+    <header>
+      <h2>Galeria</h2>
+    </header>
+    <div class="wrapper">
+      <div class="wrapper-galeria">
+        <ul class="slide">
+          <li><img src="assets/foto-1.jpeg" alt=""></li>
+          <li><img src="assets/foto-2.jpeg" alt=""></li>
+          <li><img src="assets/foto-3.jpeg" alt=""></li>
+          <li><img src="assets/foto-4.jpeg" alt=""></li>
+          <li><img src="assets/foto-5.jpeg" alt=""></li>
+          <li><img src="assets/foto-6.jpeg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="palestrantes">
+
+    <div class="wrapper">
+      <div class="col-b">
+        <header>
+          <h2>A interdisciplinaridade na Inovação</h2>
+          <h4>Professora Titular Dra. Regilda Saraiva dos Reis Moreira de Araújo</h4>
+        </header>
+        <div class="content">
+          <p>Possui graduação em Nutrição pela Universidade Federal do Piauí (UFPI), mestrado em Tecnologia de Alimentos pela Universidade Federal do Ceará (UFC) e doutorado em Ciência de Alimentos pela Universidade de São Paulo (USP). Fez Pós-Doutorado em Ciência dos Alimentos na Faculdade de Farmácia da UFMG e Pós-Doutorado em Nutrição em Saúde Pública na FSP/USP . É Professora Titular da UFPI e Pesquisadora do CNPq.</p>
+        </div>
+      </div>
+      <div class="col-a">
+        <div class="foto">
+          <img src="assets/palestrantes/dr-regilda.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="background-section">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Propriedade Intelectual e Inovação no Desenvolvimento de Cultivares na Embrapa</h2>
+            <h4>Prof. Dr. Maurisrael de Moura Rocha</h4>
+          </header>
+          <div class="content">
+            <p>Possui graduação em Engenharia Agronômica pela Universidade Federal do Piauí, mestrado e doutorado em Genética e Melhoramento de Plantas pela Escola Superior de Agricultura "Luiz de Queiroz" da Universidade de São Paulo. Atualmente é pesquisador A da Empresa Brasileira de Pesquisa Agropecuária-EMBRAPA, Centro de Pesquisa Agropecuária do Meio-Norte-CPAMN, e professor permanente dos cursos de Pós-graduação em Agronomia (PPGA) e Alimentos e Nutrição (PPGAN) da Universidade Federal do Piauí-UFPI</p>
+          </div>
+        </div>
+        <div class="col-b">
+          <div class="foto">
+            <img src="assets/palestrantes/dr-maurisrael.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="col-b">
+        <header>
+          <h2>A Importência dos NIT na Proteção e Gestão da Propriedade Intelectual</h2>
+          <h4>Prof. Dr. Jefferson Cruz dos Santos Leite</h4>
+        </header>
+        <div class="content">
+          <p>Possui graduação em Licenciatura Plena em Matemática pela Universidade Federal do Piauí (2002), Mestrado em Matemática pela Universidade Federal do Ceará (2004) e Doutorado em Matemática Aplicada pela Universidade Estadual de Campinas (2011). Atualmente é avaliador de projetos do Instituto Federal do Maranhão e professor associado da Universidade Federal do Piauí. Tem experiência na área de Matemática, com ênfase em Equações Diferenciais aplicadas a modelos epidemiológicos.</p>
+        </div>
+      </div>
+      <div class="col-a">
+        <div class="foto">
+          <img src="assets/palestrantes/dr-jefferson.jpeg">
+        </div>
+      </div>
+    </div>
+
+    <div class="background-section">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Empreendedorismo científico: da ideia ao mercado</h2>
+            <h4>Prof. Dr. Lívio César Cunha Nunes</h4>
+          </header>
+          <div class="content">
+            <p>Possui graduação em Farmácia pela Universidade Federal do Ceará (1996), habilitação em Indústria Farmacêutica pela Universidade Federal do Ceará (1997), mestrado (2000), doutorado (2008) em Ciências Farmacêuticas pela Universidade Federal de Pernambuco e pós-doutorado (2012) em tecnologia farmacêutica pela Universidade de Coimbra - Portugal. Professor Associado do Curso de Farmácia da Universidade Federal do Piauí, membro permanente do Programa de Pós-graduação em Ciências Farmacêuticas e Ciências dos Materiais - Mestrado e Doutorado (UFPI) e do Programa de Pós-graduação em Biotecnologia - Doutorado (UFPI/RENORBIO).</p>
+          </div>
+        </div>
+        <div class="col-b">
+          <div class="foto">
+            <img src="assets/palestrantes/dr-livio.jpeg">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="col-b">
+        <header>
+          <h2>Aprenda a Proteger Suas Ideias Através da Propriedade Intelectual</h2>
+          <h4>Me. Arimatéia Quinto</h4>
+        </header>
+        <div class="content">
+          <p>Possui graduação em COMUNICAÇÃO SOCIAL - PUBLICIDADE E PROPAGANDA pelo CENTRO DE ENSINO UNIFICADO DE TERESINA (2010). Tem experiência na área de comunicação, marketing, inovação e propriedade intelectual onde atua desde 2014 pela empresa Companhia das Marcas, como consultor empresarial e palestrante. Atualmente está no Mestrado em Propriedade Intelectual e Transferência de Tecnologia para a Inovação, pela Universidade Federal do Piauí - UFPI/ PROFNIT.</p>
+        </div>
+      </div>
+      <div class="col-a">
+        <div class="foto">
+          <img src="assets/palestrantes/me-arimateia.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="background-section">
+      <div class="wrapper">
+        <div class="col-a">
+          <header>
+            <h2>Como Nascem os Negócios Inovadores</h2>
+            <h4>Prof. Dr. Marcus Linhares</h4>
+          </header>
+          <div class="content">
+            <p>Pós Doutor em Inovação pela UFBA. Doutor em Biotecnologia Industrial - UFBA. Mestre em Ciências da Educação pela UFPE / ULHT - Universidade Federal de Pernambuco com Extensão na Universidade Lusófona de Humanidades e Tecnologia - Lisboa/Portugal. M.B.A. em Gestão Empresarial. Especialização em Educação, Desenvolvimento e Políticas Educativas. Graduado em Administração. Professor efetivo do IFPI - Instituto Federal do Piauí - Campus Picos. Autor da Metodologia: C.H.O.Q.U.E.: Tratamento para o Surto Empreendedor.</p>
+          </div>
+        </div>
+        <div class="col-b">
+          <div class="foto">
+            <img src="assets/palestrantes/dr-marcus.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <div class="wrapper">
+      <p>&copy;2022 Inova IFPI.
+        <br>
+        Alguns direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
+<script type="module" src="js/script.js"></script>
+
+</html>
