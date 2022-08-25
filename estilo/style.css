@@ -61,6 +61,7 @@ section header h2 {
   color: var(--headline);
   font-size: 3rem;
   line-height: 3.9rem;
+  margin-top: 4rem;
 }
 
 section header h4 {
@@ -579,7 +580,7 @@ footer .social-links {
   #sobre .wrapper {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
-    gap: 2.5rem;
+    gap: 5rem;
   }
 
   /* ----- P A L E S T R A N T E S  -----*/
