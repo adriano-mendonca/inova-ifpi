@@ -398,8 +398,7 @@ footer .social-links {
 .slide li {
   flex-shrink: 0;
   width: 80vw;
-  max-width: 50rem;
-  max-height: 35rem;
+  max-width: 80rem;
   margin: 0 20px;
   border-radius: 4px;
   overflow: hidden;
@@ -590,7 +589,7 @@ footer .social-links {
   }
 
   #palestrantes .foto {
-    margin-bottom: 5rem;
+    margin: 4rem auto 5rem auto;
   }
 
   #palestrantes .wrapper{    
