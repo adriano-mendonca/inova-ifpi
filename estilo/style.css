@@ -76,6 +76,7 @@ section .content p {
   font-size: 1.6rem;
   line-height: 150%;
   font-weight: 400;
+  color: var(--paragraph)
 }
 
 span {
@@ -497,7 +498,7 @@ footer .social-links {
   }
 
   nav#navigation.scroll .menu ul li a::after{
-    background: white;
+    background: var(--contrast);
   }
 
   nav#navigation .menu ul li a.active::after,
@@ -575,6 +576,12 @@ footer .social-links {
     padding: 8rem;
   }
 
+  #sobre .wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'A B';
+    gap: 2.5rem;
+  }
+
   /* ----- P A L E S T R A N T E S  -----*/
 
   #palestrantes .content p {
@@ -585,10 +592,9 @@ footer .social-links {
     margin-bottom: 5rem;
   }
 
-  #palestrantes .wrapper {    
+  #palestrantes .wrapper{    
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'A B';
-
   }
 
   /*----- F O O T E R -----*/
