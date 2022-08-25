@@ -297,7 +297,7 @@ body.menu-mobile .logo, body.menu-mobile nav button{
 /* ----- S O B R E -----*/
 
 #sobre {
-  padding: 8rem;
+  padding: 4rem;
 }
 
 #sobre h2 {
@@ -331,7 +331,7 @@ section.galeria {
 /* ----- P A L E S T R A N T E ----- */
 
 #palestrantes .wrapper {     
-  padding: 8rem;
+  padding: 4rem;
 }
 
 #palestrantes .content h2{
@@ -379,7 +379,7 @@ footer .social-links {
 
 .galeria {
   grid-column: 1 / -1;
-  padding: 8rem;
+  padding: 4rem;
 }
 
 .wrapper-galeria {
@@ -582,7 +582,16 @@ footer .social-links {
     gap: 5rem;
   }
 
+    /* ----- G A L E R I A  -----*/
+  .galeria {
+    padding: 8rem;
+  }
+
   /* ----- P A L E S T R A N T E S  -----*/
+
+  #palestrantes .wrapper {     
+    padding: 8rem;
+  }
 
   #palestrantes .content p {
     margin-bottom: 0;
