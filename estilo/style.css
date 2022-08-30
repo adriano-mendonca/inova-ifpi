@@ -98,8 +98,10 @@ a {
   grid-area: B;
 }
 
-.logo {
-  background: tomato;
+#navigation .wrapper .logo {
+  font-weight: bold;
+  text-transform: uppercase;
+  background: white;
   padding: 20px;
 }
 

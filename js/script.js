@@ -5,7 +5,7 @@ slide.init();
 
 let foto = 1;
 setInterval(function () {
-  if (foto <= 5) {
+  if (foto <= 4) {
     slide.changeSlide(foto);
     foto++;
   } else {
