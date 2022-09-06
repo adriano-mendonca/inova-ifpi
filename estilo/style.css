@@ -101,8 +101,10 @@ a {
 #navigation .wrapper .logo {
   font-weight: bold;
   text-transform: uppercase;
-  background: white;
-  padding: 20px;
+}
+
+.logo { 
+  visibility: hidden;
 }
 
 #navigation button.open-menu path {
